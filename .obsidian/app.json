@@ -1,4 +1,6 @@
 {
   "attachmentFolderPath": "source/content/assets",
-  "alwaysUpdateLinks": true
+  "alwaysUpdateLinks": true,
+  "newFileLocation": "folder",
+  "newFileFolderPath": "source/content/posts"
 }
