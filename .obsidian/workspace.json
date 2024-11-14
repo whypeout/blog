@@ -11,8 +11,12 @@
             "id": "015a3efefa1b6397",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "source/content/index.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -81,6 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "source/content/index.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "source/content/index.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +124,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "source/content/index.md"
+              }
             }
           },
           {
@@ -149,6 +157,13 @@
   },
   "active": "b77831b90dd9f87b",
   "lastOpenFiles": [
+    "source/content/posts/azure az104/Az 104 - Prerequisites Azure Administrator.md",
+    "source/content/posts/azure az104/Az 104 - Monitor and backup azure resources.md",
+    "source/content/posts/azure az104/Az 104 - Managed Identities Governance.md",
+    "source/content/posts/azure az104/Az 104 - Implement and Manage storage in azure.md",
+    "source/content/posts/azure az104/Az 104 - Deploy and manage azure compute resources.md",
+    "source/content/posts/azure az104/Az 104 - Configure and Manage virtual networks for azure administrators.md",
+    "source/content/posts/azure az104",
     "templates/Post.md",
     "templates/New Text Document.txt",
     "templates/New folder",
