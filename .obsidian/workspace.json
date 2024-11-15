@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "41bbf3a3152d8be6",
+        "id": "ed853b5e321da82c",
         "type": "tabs",
         "children": [
           {
-            "id": "015a3efefa1b6397",
+            "id": "4b469f84abd8cd5f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "source/content/index.md",
+                "file": "source/content/posts/azure az104/Az 104 - Prerequisites Azure Administrator.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "source/content/index.md",
+                "file": "source/content/posts/azure az104/Az 104 - Prerequisites Azure Administrator.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "source/content/index.md",
+                "file": "source/content/posts/azure az104/Az 104 - Prerequisites Azure Administrator.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "source/content/index.md"
+                "file": "source/content/posts/azure az104/Az 104 - Prerequisites Azure Administrator.md"
               }
             }
           },
@@ -155,14 +155,16 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "b77831b90dd9f87b",
+  "active": "4b469f84abd8cd5f",
   "lastOpenFiles": [
+    "Untitled.canvas",
     "source/content/posts/azure az104/Az 104 - Prerequisites Azure Administrator.md",
     "source/content/posts/azure az104/Az 104 - Monitor and backup azure resources.md",
     "source/content/posts/azure az104/Az 104 - Managed Identities Governance.md",
     "source/content/posts/azure az104/Az 104 - Implement and Manage storage in azure.md",
     "source/content/posts/azure az104/Az 104 - Deploy and manage azure compute resources.md",
     "source/content/posts/azure az104/Az 104 - Configure and Manage virtual networks for azure administrators.md",
+    "source/content/index.md",
     "source/content/posts/azure az104",
     "templates/Post.md",
     "templates/New Text Document.txt",
