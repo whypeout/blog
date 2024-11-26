@@ -33,9 +33,9 @@ You can use Microsoft Entra ID to provide more secure access to cloud-based reso
 
 Microsoft Entra constitutes a separate Azure service. Its most elementary form, which any new Azure subscription includes automatically, doesn't incur any extra cost and is referred to as the Free tier. If you subscribe to any Microsoft Online business services (for example, Microsoft 365 or Microsoft Intune), you automatically get Microsoft Entra ID with access to all the Free features.
 
- Note
-
-By default, when you create a new Azure subscription by using a Microsoft account, the subscription automatically includes a new Microsoft Entra tenant named Default Directory.
+> Note
+>
+> By default, when you create a new Azure subscription by using a Microsoft account, the subscription automatically includes a new Microsoft Entra tenant named Default Directory.
 
 Some of the more advanced identity management features require paid versions of Microsoft Entra ID, offered in the form of Basic and Premium tiers. Some of these features are also automatically included in Microsoft Entra instances generated as part of Microsoft 365 subscriptions. Differences between Microsoft Entra versions are discussed later in this module.
 
@@ -47,9 +47,9 @@ Unlike AD DS, Microsoft Entra ID is multi-tenant by design and is implemented sp
 
 At any given time, an Azure subscription must be associated with one, and only one, Microsoft Entra tenant. This association allows you to grant permissions to resources in the Azure subscription (via RBAC) to users, groups, and applications that exist in that particular Microsoft Entra tenant.
 
- Note
-
-You can associate the same Microsoft Entra tenant with multiple Azure subscriptions. This allows you to use the same users, groups, and applications to manage resources across multiple Azure subscriptions.
+> Note
+>
+> You can associate the same Microsoft Entra tenant with multiple Azure subscriptions. This allows you to use the same users, groups, and applications to manage resources across multiple Azure subscriptions.
 
 Each Microsoft Entra tenant is assigned the default Domain Name System (DNS) domain name, consisting of a unique prefix. The prefix, derived from the name of the Microsoft account you use to create an Azure subscription or provided explicitly when creating a Microsoft Entra tenant, is followed by the **onmicrosoft.com** suffix. Adding at least one custom domain name to the same Microsoft Entra tenant is possible and common. This name utilizes the DNS domain namespace that the corresponding company or organization owns. The Microsoft Entra tenant serves as the security boundary and a container for Microsoft Entra objects such as users, groups, and applications. A single Microsoft Entra tenant can support multiple Azure subscriptions.
 
@@ -199,11 +199,11 @@ The following table describes the user accounts supported in Microsoft Entra ID.
 
 Expand table
 
-|User account|Description|
-|---|---|
-|**Cloud identity**|A user account with a _cloud identity_ is defined only in Microsoft Entra ID. This type of user account includes administrator accounts and users who are managed as part of your organization. A cloud identity can be for user accounts defined in your Microsoft Entra organization, and also for user accounts defined in an external Microsoft Entra instance. When a cloud identity is removed from the primary directory, the user account is deleted.|
-|**Directory-synchronized identity**|User accounts that have a _directory-synchronized identity_ are defined in an on-premises Active Directory. A synchronization activity occurs via Microsoft Entra Connect to bring these user accounts in to Azure. The source for these accounts is Windows Server Active Directory.|
-|**Guest user**|_Guest user_ accounts are defined outside Azure. Examples include user accounts from other cloud providers, and Microsoft accounts like an Xbox LIVE account. The source for guest user accounts is Invited user. Guest user accounts are useful when external vendors or contractors need access to your Azure resources.|
+| User account                        | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| ----------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Cloud identity**                  | A user account with a _cloud identity_ is defined only in Microsoft Entra ID. This type of user account includes administrator accounts and users who are managed as part of your organization. A cloud identity can be for user accounts defined in your Microsoft Entra organization, and also for user accounts defined in an external Microsoft Entra instance. When a cloud identity is removed from the primary directory, the user account is deleted. |
+| **Directory-synchronized identity** | User accounts that have a _directory-synchronized identity_ are defined in an on-premises Active Directory. A synchronization activity occurs via Microsoft Entra Connect to bring these user accounts in to Azure. The source for these accounts is Windows Server Active Directory.                                                                                                                                                                         |
+| **Guest user**                      | _Guest user_ accounts are defined outside Azure. Examples include user accounts from other cloud providers, and Microsoft accounts like an Xbox LIVE account. The source for guest user accounts is Invited user. Guest user accounts are useful when external vendors or contractors need access to your Azure resources.                                                                                                                                    |
 
 ### Things to consider when choosing user accounts
 
@@ -298,11 +298,11 @@ When you add members to a group, there are different ways you can assign member 
 
 Expand table
 
-|Access rights|Description|
-|---|---|
-|**Assigned**|Add specific users as members of a group, where each user can have unique permissions.|
-|**Dynamic user**|Use dynamic membership rules to automatically add and remove group members. When member attributes change, Azure reviews the dynamic group rules for the directory. If the member attributes meet the rule requirements, the member is added to the group. If the member attributes no longer meet the rule requirements, the member is removed.|
-|**Dynamic device**|(_Security groups only_) Apply dynamic group rules to automatically add and remove devices in security groups. When device attributes change, Azure reviews the dynamic group rules for the directory. If the device attributes meet the rule requirements, the device is added to the security group. If the device attributes no longer meet the rule requirements, the device is removed.|
+| Access rights      | Description                                                                                                                                                                                                                                                                                                                                                                                  |
+| ------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Assigned**       | Add specific users as members of a group, where each user can have unique permissions.                                                                                                                                                                                                                                                                                                       |
+| **Dynamic user**   | Use dynamic membership rules to automatically add and remove group members. When member attributes change, Azure reviews the dynamic group rules for the directory. If the member attributes meet the rule requirements, the member is added to the group. If the member attributes no longer meet the rule requirements, the member is removed.                                             |
+| **Dynamic device** | (_Security groups only_) Apply dynamic group rules to automatically add and remove devices in security groups. When device attributes change, Azure reviews the dynamic group rules for the directory. If the device attributes meet the rule requirements, the device is added to the security group. If the device attributes no longer meet the rule requirements, the device is removed. |
 
 # Create administrative units
 
@@ -355,17 +355,6 @@ The main takeaways for this module are:
     
 - Administrative units help you control administrator access to resources.
     
-
-## Learn more with Azure documentation
-
-- [Enterprise user management documentation](https://learn.microsoft.com/en-us/entra/identity/users/). This collection of articles that covers various topics related to user authentication in Microsoft Entra. You learn how to use groups, domain names, and licenses to manage user access to apps and resources3.
-    
-- [Manage Microsoft Entra groups and group membership](https://learn.microsoft.com/en-us/entra/fundamentals/how-to-manage-groups). This article explains how to create, edit, and delete groups in Microsoft Entra. You also learn how to add or remove members and owners, assign roles, and use dynamic rules for group membership2.
-    
-
-## Learn more with self-paced training
-
-- [Manage users and groups in Microsoft Entra ID](https://learn.microsoft.com/en-us/training/modules/manage-users-and-groups-in-aad/). This training module covers the basic principles of user and groups.
 
 ---
 
@@ -467,6 +456,9 @@ Expand table
 |---|---|---|
 |Search [Azure regions](https://azure.microsoft.com/global-infrastructure/geographies/#geographies) by geography.|Search [Azure products](https://azure.microsoft.com/global-infrastructure/services/) by region or geography.|Search for [paired regions](https://learn.microsoft.com/en-us/azure/best-practices-availability-paired-regions#azure-cross-region-replication-pairings-for-all-geographies) and exceptions.|
 |[![Screenshot that shows how to search for available regions by geographic location.](https://learn.microsoft.com/en-us/training/wwl-azure/configure-subscriptions/media/regions-select-by-geography.png)](https://learn.microsoft.com/en-us/training/wwl-azure/configure-subscriptions/media/regions-select-by-geography-expanded.png#lightbox)|[![Screenshot that shows how to find products available according to region or geographic location.](https://learn.microsoft.com/en-us/training/wwl-azure/configure-subscriptions/media/regions-select-by-product.png)](https://learn.microsoft.com/en-us/training/wwl-azure/configure-subscriptions/media/regions-select-by-product-expanded.png#lightbox)|[![Screenshot that shows how to search for regional pairs.](https://learn.microsoft.com/en-us/training/wwl-azure/configure-subscriptions/media/search-region-pairs.png)](https://learn.microsoft.com/en-us/training/wwl-azure/configure-subscriptions/media/search-region-pairs-expanded.png#lightbox)|
+
+
+---
 
 # Implement Azure subscriptions
 
@@ -1253,7 +1245,7 @@ The membership type field can be one of three values:
     
 2. **Dynamic user**. You can create rules based on characteristics to enable attribute-based dynamic memberships for groups. For example, if a user’s department is Sales, that user will be dynamically assigned to the Sales group.
     
-    You can use security groups for either devices or users, but you can only use Microsoft 365 Groups for user groups. If the user's department changes in the future, they're automatically removed from the group. This feature requires a Microsoft Entra ID P1 license.
+    You can use security groups for either devices or users, but you can only use Microsoft 365 Groups for user groups. If the user's department changes in the future, they're automatically removed from the group. **This feature requires a Microsoft Entra ID P1 license.**
     
 3. **Dynamic device**. You can create rules based on characteristics to enable attribute-based dynamic memberships for groups. For example, if a user’s device is associated with the Service department, that device will be dynamically assigned to the Service group.
     

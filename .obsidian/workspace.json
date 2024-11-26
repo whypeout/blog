@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "ed853b5e321da82c",
+        "id": "8228a594d8ded02f",
         "type": "tabs",
         "children": [
           {
-            "id": "4b469f84abd8cd5f",
+            "id": "4a21f4ac2247de72",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "source/content/posts/azure az104/Az 104 - Prerequisites Azure Administrator.md",
+                "file": "source/content/posts/Headscale Tailscale/Headscale & Tailscale CLI.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,7 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 383.5
   },
   "right": {
     "id": "ba1ec06a672fb227",
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "source/content/posts/azure az104/Az 104 - Prerequisites Azure Administrator.md",
+                "file": "source/content/posts/Headscale Tailscale/Headscale & Tailscale CLI.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "source/content/posts/azure az104/Az 104 - Prerequisites Azure Administrator.md",
+                "file": "source/content/posts/Headscale Tailscale/Headscale & Tailscale CLI.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "source/content/posts/azure az104/Az 104 - Prerequisites Azure Administrator.md"
+                "file": "source/content/posts/Headscale Tailscale/Headscale & Tailscale CLI.md"
               }
             }
           },
@@ -155,15 +155,36 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "4b469f84abd8cd5f",
+  "active": "4a21f4ac2247de72",
   "lastOpenFiles": [
+    "source/content/posts/Headscale Tailscale/Install Headscale, Tailscale punya Sendiri.md",
+    "source/content/posts/Headscale Tailscale/Headscale & Tailscale CLI.md",
+    "source/content/assets/headscale-ui-1024x323.webp",
+    "source/content/posts/Headscale Tailscale/Tailscale LAN Access.md",
+    "source/content/posts/Headscale Tailscale/Tailscale Client Windows.md",
+    "source/content/assets/0_IZm9FKfu6cmOeSDr.webp",
+    "source/content/assets/0_LyyeWP0xDDBMP1h6.webp",
+    "source/content/assets/0_pSaJT2LsR6ZmOd26.webp",
+    "source/content/posts/Headscale Tailscale/Tailscale Client Android.md",
+    "source/content/assets/0_pBp0badO4eHsWC7N.webp",
+    "source/content/assets/0_pXcT6cJPSCJ3x5iN.webp",
+    "source/content/assets/0_2v2iGc6VQZNDdfx6.webp",
+    "source/content/assets/0_aGS2H18QKDrI5PzT.webp",
+    "source/content/assets/0_5r6vC-mjgV790mfk.webp",
+    "source/content/posts/Headscale Tailscale/Tailscale Client MAC OS.md",
+    "source/content/assets/0_yTqPPOBSWrDE1nR9.webp",
+    "source/content/posts/Headscale Tailscale",
+    "source/content/posts/Rangkuman Compute.md",
+    "source/content/posts/azure az104/Az 104 - Deploy and manage azure compute resources.md",
+    "source/content/posts/azure az104/Az 104 - Configure and Manage virtual networks for azure administrators.md",
+    "source/content/posts/Rangkuman Network.md",
+    "source/content/posts/Rangkuman Storage.md",
+    "source/content/posts/azure az104/Az 104 - Implement and Manage storage in azure.md",
+    "source/content/posts/azure az104/Az 104 - Managed Identities Governance.md",
+    "source/content/posts/Rangkuman - entra id.md",
     "Untitled.canvas",
     "source/content/posts/azure az104/Az 104 - Prerequisites Azure Administrator.md",
     "source/content/posts/azure az104/Az 104 - Monitor and backup azure resources.md",
-    "source/content/posts/azure az104/Az 104 - Managed Identities Governance.md",
-    "source/content/posts/azure az104/Az 104 - Implement and Manage storage in azure.md",
-    "source/content/posts/azure az104/Az 104 - Deploy and manage azure compute resources.md",
-    "source/content/posts/azure az104/Az 104 - Configure and Manage virtual networks for azure administrators.md",
     "source/content/index.md",
     "source/content/posts/azure az104",
     "templates/Post.md",

@@ -367,13 +367,9 @@ The following diagram shows the relationship between the Blob Storage resources.
 There are many common uses for Blob Storage. Consider the following scenarios and think about your own data needs:
 
 - **Consider browser uploads**. Use Blob Storage to serve images or documents directly to a browser.
-    
 - **Consider distributed access**. Blob Storage can store files for distributed access, such as during an installation process.
-    
 - **Consider streaming data**. Stream video and audio by using Blob Storage.
-    
 - **Consider archiving and recovery**. Blob Storage is a great solution for storing data for backup and restore, disaster recovery, and archiving.
-    
 - **Consider application access**. You can store data in Blob Storage for analysis by an on-premises or Azure-hosted service.
 
 # Create blob containers
@@ -385,15 +381,10 @@ Azure Blob Storage uses a container resource to group a set of blobs. A blob can
 Let's look at the configuration characteristics of containers and blobs.
 
 - All blobs must be in a container.
-    
 - A container can store an unlimited number of blobs.
-    
 - An Azure storage account can contain an unlimited number of containers.
-    
 - You can create the container in the Azure portal.
-    
 - You upload blobs into a container.
-    
 
 ### How to move content between containers
 
@@ -404,20 +395,18 @@ In the Azure portal, you configure two settings to create a container for an Azu
 ![Screenshot that shows the container creation page and the public access level choices in the Azure portal.](https://learn.microsoft.com/en-us/training/wwl-azure/configure-blob-storage/media/blob-containers-a243a2b9.png)
 
 - **Name**: Enter a name for your container. The name must be unique within the Azure storage account.
-    
     - The name can contain only lowercase letters, numbers, and hyphens.
     - The name must begin with a letter or a number.
     - The minimum length for the name is three characters.
     - The maximum length for the name is 63 characters.
 - **Public access level**: The access level specifies whether the container and its blobs can be accessed publicly. By default, container data is private and visible only to the account owner. There are three access level choices:
-    
     - **Private**: (Default) Prohibit anonymous access to the container and blobs.
     - **Blob**: Allow anonymous public read access for the blobs only.
     - **Container**: Allow anonymous public read and list access to the entire container, including the blobs.
 
- Note
-
-You can also create a blob container with PowerShell by using the `New-AzStorageContainer` command.
+> Note
+>
+> You can also create a blob container with PowerShell by using the `New-AzStorageContainer` command.
 
 # Assign blob access tiers
 
@@ -471,13 +460,9 @@ Azure Blob Storage supports lifecycle management for data sets. It offers a rich
 You can use Azure Blob Storage lifecycle management policy rules to accomplish several tasks.
 
 - Transition blobs to a cooler storage tier (Hot to Cool, Hot to Archive, Cool to Archive) to optimize for performance and cost.
-    
 - Delete blobs at the end of their lifecycles.
-    
 - Define rule-based conditions to run once per day at the Azure storage account level.
-    
 - Apply rule-based conditions to containers or a subset of blobs.
-    
 
 #### Business scenario
 
@@ -556,7 +541,6 @@ Let's take a closer look at the characteristics of blob types.
 - The block blob type is the default type for a new blob. When you're creating a new blob, if you don't choose a specific type, the new blob is created as a block blob.
     
 - After you create a blob, you can't change its type.
-    
 
 ### Things to consider when using blob upload tools
 

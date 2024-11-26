@@ -1,0 +1,24 @@
+{
+	"nodes":[
+		{"id":"5f52ef7883c18afc","x":-600,"y":-420,"width":334,"height":246,"color":"5","type":"text","text":"Microsoft Azure Entra ID is \nMicrsooft Identify Provider\nspeak cloud over HTTPS/TLS Encrypt\n- OAuth2\n- Open ID Connect\n- SAML\n- WS-FED"},
+		{"id":"e15cf42fef341d03","x":180,"y":-420,"width":320,"height":246,"color":"4","type":"text","text":"On Premise\n- Windows Active Directory Domain Services\n- NTLM\n- Kerberos\n- LDAP\nOneway Sync to Cloud"},
+		{"id":"0b4a750df0702f69","x":-160,"y":-420,"width":250,"height":60,"color":"4","type":"text","text":"Ms. Az. Graph - REST API"},
+		{"id":"973fe9f603efbd98","x":-160,"y":-308,"width":250,"height":134,"color":"4","type":"text","text":"Entra Connect Sync\nCloud Sync (as services in cloud)\nSync (as app in windows)"},
+		{"id":"14d4ca4c911520ec","x":-828,"y":-120,"width":250,"height":60,"type":"text","text":"Azure Cloud"},
+		{"id":"1b6aa58ea810389f","x":-760,"y":-20,"width":250,"height":60,"type":"text","text":"MS 365"},
+		{"id":"9d2fdadd57d3dae4","x":-600,"y":80,"width":250,"height":60,"type":"text","text":"3rd Party SaaS"},
+		{"id":"84eb1ba9e17ef140","x":-475,"y":-90,"width":146,"height":60,"type":"text","text":"Trust ID"},
+		{"id":"8e26d51e9897bdfb","x":-600,"y":-780,"width":334,"height":120,"color":"5","type":"text","text":"Tenant : bdi.com (primary domain)\nalt dom : bdi.onmicrosoft.com\nglobal instance out of subscription"}
+	],
+	"edges":[
+		{"id":"c998e43588dfba17","fromNode":"e15cf42fef341d03","fromSide":"left","toNode":"0b4a750df0702f69","toSide":"right"},
+		{"id":"d42a81dcd0f4e0a2","fromNode":"0b4a750df0702f69","fromSide":"left","toNode":"5f52ef7883c18afc","toSide":"right"},
+		{"id":"b038d2079d94c691","fromNode":"e15cf42fef341d03","fromSide":"left","toNode":"973fe9f603efbd98","toSide":"right"},
+		{"id":"d496f6fbea98be95","fromNode":"973fe9f603efbd98","fromSide":"left","toNode":"5f52ef7883c18afc","toSide":"right"},
+		{"id":"177d99fd155f7395","fromNode":"14d4ca4c911520ec","fromSide":"right","toNode":"84eb1ba9e17ef140","toSide":"left"},
+		{"id":"e81a66b3ba90b03d","fromNode":"1b6aa58ea810389f","fromSide":"right","toNode":"84eb1ba9e17ef140","toSide":"bottom"},
+		{"id":"bede6475b79c4656","fromNode":"9d2fdadd57d3dae4","fromSide":"top","toNode":"84eb1ba9e17ef140","toSide":"bottom"},
+		{"id":"0745593d243946fb","fromNode":"84eb1ba9e17ef140","fromSide":"top","toNode":"5f52ef7883c18afc","toSide":"bottom"},
+		{"id":"5a202dae757ff954","fromNode":"5f52ef7883c18afc","fromSide":"top","toNode":"8e26d51e9897bdfb","toSide":"bottom"}
+	]
+}

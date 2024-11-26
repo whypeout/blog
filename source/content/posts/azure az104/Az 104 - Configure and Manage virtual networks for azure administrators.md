@@ -104,12 +104,12 @@ Let's examine the reserved addresses in an IP address range of `192.168.1.0/24`
 
 Expand table
 
-|Reserved address|Reason|
-|---|---|
-|`192.168.1.0`|This value identifies the virtual network address.|
-|`192.168.1.1`|Azure configures this address as the default gateway.|
-|`192.168.1.2` _and_ `192.168.1.3`|Azure maps these Azure DNS IP addresses to the virtual network space.|
-|`192.168.1.255`|This value supplies the virtual network broadcast address.|
+| Reserved address                  | Reason                                                                |
+| --------------------------------- | --------------------------------------------------------------------- |
+| `192.168.1.0`                     | This value identifies the virtual network address.                    |
+| `192.168.1.1`                     | Azure configures this address as the default gateway.                 |
+| `192.168.1.2` _and_ `192.168.1.3` | Azure maps these Azure DNS IP addresses to the virtual network space. |
+| `192.168.1.255`                   | This value supplies the virtual network broadcast address.            |
 
 ### Things to consider when using subnets
 
@@ -222,14 +222,12 @@ A public IP address resource can be associated with virtual machine network inte
 
 The following table summarizes how you can associate public IP addresses for different types of resources.
 
-Expand table
-
-|Resource|Public IP address association|Dynamic IP address|Static IP address|
-|---|---|---|---|
-|Virtual machine|NIC|Yes|Yes|
-|Load balancer|Front-end configuration|Yes|Yes|
-|VPN gateway|VPN gateway IP configuration|Yes|Yes *****|
-|Application gateway|Front-end configuration|Yes|Yes *****|
+| Resource            | Public IP address association | Dynamic IP address | Static IP address |
+| ------------------- | ----------------------------- | ------------------ | ----------------- |
+| Virtual machine     | NIC                           | Yes                | Yes               |
+| Load balancer       | Front-end configuration       | Yes                | Yes               |
+| VPN gateway         | VPN gateway IP configuration  | Yes                | Yes *****         |
+| Application gateway | Front-end configuration       | Yes                | Yes *****         |
 
 ***** Static IP addresses are available on certain SKUs only.
 
@@ -239,14 +237,12 @@ When you create a public IP address, you select the Basic or Standard SKU. Your 
 
 The following table summarizes the differences between the SKU types for public IP addresses.
 
-Expand table
-
-|Feature|Basic SKU|Standard SKU|
-|---|---|---|
-|IP assignment|Static or Dynamic|Static|
-|Security|Open by default|Secure by default, closed to inbound traffic|
-|Resources|Network interfaces, VPN gateways, Application gateways, and internet-facing load balancers|Network interfaces or public standard load balancers|
-|Redundancy|Not zone redundant|Zone redundant by default|
+| Feature       | Basic SKU                                                                                 | Standard SKU                                         |
+| ------------- | ----------------------------------------------------------------------------------------- | ---------------------------------------------------- |
+| IP assignment | Static or Dynamic                                                                         | Static                                               |
+| Security      | Open by default                                                                           | Secure by default, closed to inbound traffic         |
+| Resources     | Network interfaces, VPN gateway, Application gateways, and internet-facing load balancers | Network interfaces or public standard load balancers |
+| Redundancy    | Not zone redundant                                                                        | Zone redundant by default                            |
 
 # Allocate or assign private IP addresses
 
@@ -259,11 +255,11 @@ The following table summarizes how you can associate private IP addresses for di
 
 Expand table
 
-|Resource|Private IP address association|Dynamic IP address|Static IP address|
-|---|---|---|---|
-|Virtual machine|NIC|Yes|Yes|
-|Internal load balancer|Front-end configuration|Yes|Yes|
-|Application gateway|Front-end configuration|Yes|Yes|
+| Resource               | Private IP address association | Dynamic IP address | Static IP address |
+| ---------------------- | ------------------------------ | ------------------ | ----------------- |
+| Virtual machine        | NIC                            | Yes                | Yes               |
+| Internal load balancer | Front-end configuration        | Yes                | Yes               |
+| Application gateway    | Front-end configuration        | Yes                | Yes               |
 
 #### Private IP address assignment
 
@@ -385,16 +381,13 @@ Network security groups are defined for your virtual machines in the Azure porta
 You can assign network security groups to a subnet and create a protected screened subnet (also referred to as a demilitarized zone or _DMZ_). A DMZ acts as a buffer between resources within your virtual network and the internet.
 
 - Use the network security group to restrict traffic flow to all machines that reside within the subnet.
-    
 - Each subnet can have a maximum of one associated network security group.
-    
 
 #### Network security groups and network interfaces
 
 You can assign network security groups to a network interface card (NIC).
 
 - Define network security group rules to control all traffic that flows through a NIC.
-    
 - Each network interface that exists in a subnet can have zero, or one, associated network security groups.
 
 # Determine network security group rules
